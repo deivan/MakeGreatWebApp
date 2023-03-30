@@ -1,0 +1,21 @@
+.justify-between {
+    justify-content: space-between;
+}
+
+.header {
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.content {
+    border: 1px dotted gray;
+}
+
+.footer {
+    min-height: 200px;
+    background-color: floralwhite;
+}
+
+.width100 {
+    width: 100%;
+}
