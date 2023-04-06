@@ -4,7 +4,19 @@
 
 .header {
     height: 200px;
-    background-color: aquamarine;
+    position: relative;
+}
+.header__desktop img {
+    height: 200px;
+    width: 100%;
+}
+.header__desktop h5 {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+.header__mobile {
+    display: none;
 }
 
 .content {
@@ -18,4 +30,20 @@
 
 .width100 {
     width: 100%;
+}
+
+@media (max-width: 576px) {
+    .reverse-content {
+        direction: rtl;
+        flex-direction: column-reverse;
+    }
+    .header {
+        height: 30px;
+    }
+    .header__desktop {
+        display: none;
+    }
+    .header__mobile {
+        display: block;
+    }
 }
